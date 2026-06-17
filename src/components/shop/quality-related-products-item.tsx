@@ -30,7 +30,7 @@ export default function QualityRelatedProductsItem({ item }: IProps) {
 
   // ✅ FIX: dynamic link (NO hardcode)
   //   const detailsLink = `/products/mettalic-gaskets/${item.product_slug || item.id}`;
-  const detailsLink = `/products/mettalic-gaskets?type=${item.id}`;
+  const detailsLink = `/products/metallic-gaskets?type=${item.id}`;
   // const detailsLink = `/products/${item.product_slug}?type=${item.id}`;
 
   return (
