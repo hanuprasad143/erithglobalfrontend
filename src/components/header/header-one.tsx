@@ -1619,11 +1619,36 @@ export default function HeaderOne() {
                   </div>
 
                   {/* MOBILE MENU */}
-                  <div className="tp-header-bar d-xl-none">
+                  {/* <div className="tp-header-bar d-xl-none">
                     <OffcanvasButton
                       offcanvas_cls="offcanvas__2"
                       offcanvas_menu_2={true}
                     />
+                  </div> */}
+                  <div
+                    className="tp-header-bar d-xl-none"
+                    style={{
+                      visibility: "visible",
+                      opacity: 1,
+                    }}
+                  >
+                    <div
+                      style={{
+                        backgroundColor: "#1d3a72",
+                        borderRadius: "8px",
+                        width: "40px",
+                        height: "40px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        cursor: "pointer",
+                      }}
+                    >
+                      <OffcanvasButton
+                        offcanvas_cls="offcanvas__2"
+                        offcanvas_menu_2={true}
+                      />
+                    </div>
                   </div>
                 </div>
               </div>
