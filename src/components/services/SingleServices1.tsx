@@ -88,10 +88,11 @@
 // };
 
 // export default SingleServices1;
-
+"use client";
 import Link from "next/link";
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 type ServiceData = {
   id: string | number;
@@ -108,12 +109,23 @@ interface SingleServices1Props {
 
 const SingleServices1: React.FC<SingleServices1Props> = ({ data }) => {
   const { title, img, link } = data;
+  const router = useRouter();
 
   return (
+    // <div
+    //   className="services-style-one mt-0 mb-0 pb-0 pt-0 service-full-width "
+    //   style={{
+    //     width: "100%",
+    //   }}
+    // >
     <div
       className="services-style-one mt-0 mb-0 pb-0 pt-0 service-full-width "
       style={{
         width: "100%",
+        cursor: link ? "pointer" : "default",
+      }}
+      onClick={() => {
+        if (link) router.push(link);
       }}
     >
       {/* <Image
