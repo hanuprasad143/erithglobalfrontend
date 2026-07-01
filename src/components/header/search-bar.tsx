@@ -3,7 +3,7 @@
 // import Link from "next/link";
 // import { SearchSvg } from "../svg";
 
-// const API_URL = "http://localhost:5000/api";
+// const API_URL = "https://erithglobalbackend.onrender.com/api";
 
 // type Product = { id: number; name: string; slug: string; link?: string | null };
 // type ProductType = { id: number; name: string; product_slug: string; product_name: string };
@@ -320,8 +320,8 @@
 // import { SearchSvg } from "../svg";
 // import { DocumentList } from "../document-list/documentlist";
 
-// const API_URL = "http://localhost:5000/api";
-// const IMAGE_BASE = "http://localhost:5000/uploads";
+// const API_URL = "https://erithglobalbackend.onrender.com/api";
+// const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 // /* ================= TYPES ================= */
 
@@ -805,8 +805,8 @@ import Image from "next/image";
 import { SearchSvg } from "../svg";
 import { DocumentList } from "../document-list/documentlist";
 
-const API_URL = "http://localhost:5000/api";
-const IMAGE_BASE = "http://localhost:5000/uploads";
+const API_URL = "https://erithglobalbackend.onrender.com/api";
+const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 /* ================= TYPES ================= */
 

@@ -234,14 +234,14 @@ export default function ResourceBanner({
   >([]);
 
   // useEffect(() => {
-  //   fetch("http://localhost:5000/api/successstories")
+  //   fetch("https://erithglobalbackend.onrender.com/api/successstories")
   //     .then((res) => res.json())
   //     .then(setSuccessStories);
   // }, []);
 
   // useEffect(() => {
   //   fetch(
-  //     "http://localhost:5000/api/successstories?category_type=Success%20Stories",
+  //     "https://erithglobalbackend.onrender.com/api/successstories?category_type=Success%20Stories",
   //   )
   //     .then((res) => res.json())
   //     .then(setSuccessStories)
@@ -251,7 +251,7 @@ export default function ResourceBanner({
     const category = "Success Stories";
 
     fetch(
-      `http://localhost:5000/api/successstories?category_type=${encodeURIComponent(category)}`,
+      `https://erithglobalbackend.onrender.com/api/successstories?category_type=${encodeURIComponent(category)}`,
     )
       .then((res) => res.json())
       .then(setSuccessStories);
@@ -261,7 +261,7 @@ export default function ResourceBanner({
     const category = "Webinars";
 
     fetch(
-      `http://localhost:5000/api/successstories?category_type=${encodeURIComponent(category)}`,
+      `https://erithglobalbackend.onrender.com/api/successstories?category_type=${encodeURIComponent(category)}`,
     )
       .then((res) => res.json())
       .then(setApplicationGuides);
@@ -270,7 +270,9 @@ export default function ResourceBanner({
   useEffect(() => {
     const fetchDocs = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/product-downloads");
+        const res = await fetch(
+          "https://erithglobalbackend.onrender.com/api/product-downloads",
+        );
         const data = await res.json();
 
         const sorted = data.sort(
@@ -291,7 +293,7 @@ export default function ResourceBanner({
   // const handleDownload = async (doc: Document) => {
   //   try {
   //     const response = await fetch(
-  //       `http://localhost:5000/uploads/${doc.file_url}`,
+  //       `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
   //     );
   //     const blob = await response.blob();
   //     const url = window.URL.createObjectURL(blob);
@@ -558,7 +560,7 @@ export default function ResourceBanner({
                     }}
                     onClick={() => {
                       window.open(
-                        `http://localhost:5000/uploads/${doc.file_url}`,
+                        `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
                         "_blank",
                       );
                     }}
@@ -712,7 +714,7 @@ export default function ResourceBanner({
                   borderRadius: "12px",
                   overflow: "hidden",
                   height: "230px",
-                  backgroundImage: `url(http://localhost:5000${story.image})`, // ✅ FIXED
+                  backgroundImage: `url(https://erithglobalbackend.onrender.com${story.image})`, // ✅ FIXED
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -826,7 +828,7 @@ export default function ResourceBanner({
                   borderRadius: "12px",
                   overflow: "hidden",
                   height: "230px",
-                  backgroundImage: `url(http://localhost:5000${story.image})`,
+                  backgroundImage: `url(https://erithglobalbackend.onrender.com${story.image})`,
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}

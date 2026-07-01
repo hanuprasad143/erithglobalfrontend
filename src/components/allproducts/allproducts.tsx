@@ -33,11 +33,11 @@
 
 //   // ✅ FETCH DATA
 //   useEffect(() => {
-//     fetch("http://localhost:5000/api/industries")
+//     fetch("https://erithglobalbackend.onrender.com/api/industries")
 //       .then((res) => res.json())
 //       .then(setIndustries);
 
-//     fetch("http://localhost:5000/api/products")
+//     fetch("https://erithglobalbackend.onrender.com/api/products")
 //       .then((res) => res.json())
 //       .then(setProducts);
 //   }, []);
@@ -256,20 +256,20 @@
 
 //   // ✅ FETCH DATA
 //   useEffect(() => {
-//     fetch("http://localhost:5000/api/industries")
+//     fetch("https://erithglobalbackend.onrender.com/api/industries")
 //       .then((res) => res.json())
 //       .then(setIndustries);
 
-//     fetch("http://localhost:5000/api/products")
+//     fetch("https://erithglobalbackend.onrender.com/api/products")
 //       .then((res) => res.json())
 //       .then(setProducts);
 
 //     // ✅ NEW FETCH
-//     // fetch("http://localhost:5000/api/product-types/product_type=Gaskets")
+//     // fetch("https://erithglobalbackend.onrender.com/api/product-types/product_type=Gaskets")
 //     //   .then((res) => res.json())
 //     //   .then(setProductTypes);
 //     // ✅ NEW FETCH
-//     fetch("http://localhost:5000/api/product-types?product_type=Gaskets")
+//     fetch("https://erithglobalbackend.onrender.com/api/product-types?product_type=Gaskets")
 //       .then((res) => res.json())
 //       .then(setProductTypes);
 //   }, []);
@@ -570,11 +570,11 @@
 //   const [products, setProducts]     = useState<any[]>([]);
 
 //   useEffect(() => {
-//     fetch("http://localhost:5000/api/industries")
+//     fetch("https://erithglobalbackend.onrender.com/api/industries")
 //       .then((res) => res.json())
 //       .then(setIndustries);
 
-//     fetch("http://localhost:5000/api/products")
+//     fetch("https://erithglobalbackend.onrender.com/api/products")
 //       .then((res) => res.json())
 //       .then(setProducts);
 //   }, []);
@@ -851,11 +851,11 @@
 //   const [products, setProducts] = useState<any[]>([]);
 
 //   useEffect(() => {
-//     fetch("http://localhost:5000/api/industries")
+//     fetch("https://erithglobalbackend.onrender.com/api/industries")
 //       .then((res) => res.json())
 //       .then(setIndustries);
 
-//     fetch("http://localhost:5000/api/products")
+//     fetch("https://erithglobalbackend.onrender.com/api/products")
 //       .then((res) => res.json())
 //       .then(setProducts);
 //   }, []);
@@ -1192,11 +1192,11 @@ export default function AllProducts({
   const [showFilter, setShowFilter] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/industries")
+    fetch("https://erithglobalbackend.onrender.com/api/industries")
       .then((res) => res.json())
       .then(setIndustries);
 
-    fetch("http://localhost:5000/api/products")
+    fetch("https://erithglobalbackend.onrender.com/api/products")
       .then((res) => res.json())
       .then(setProducts);
   }, []);

@@ -1,8 +1,8 @@
 // // import Image from "next/image";
 // // import Link from "next/link";
 // // import OffcanvasButton from "@/components/header/button/offcanvas-btn";
-// // const API_URL = "http://localhost:5000/api";
-// // const IMAGE_BASE = "http://localhost:5000/uploads";
+// // const API_URL = "https://erithglobalbackend.onrender.com/api";
+// // const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 // // const getImageUrl = (path?: string) => {
 // //   if (!path) return "/placeholder.png";
@@ -132,7 +132,7 @@
 // //                 borderRadius: "12px",
 // //                 overflow: "hidden",
 // //                 height: "230px",
-// //                 backgroundImage: `url(http://localhost:5000/uploads/${industry.about_image})`,
+// //                 backgroundImage: `url(https://erithglobalbackend.onrender.com/uploads/${industry.about_image})`,
 // //                 backgroundSize: "cover",
 // //                 backgroundPosition: "center",
 // //               }}
@@ -263,9 +263,9 @@
 // // import WebinarsAndVideosSearchResults from "@/components/search-results/webinarsandvideosresults";
 // // import CaseStudiesSearchResults from "@/components/search-results/case-studies";
 
-// // const API_URL = "http://localhost:5000/api";
-// // // const IMAGE_BASE = "http://localhost:5000/uploads";
-// // const FILE_BASE = "http://localhost:5000/uploads";
+// // const API_URL = "https://erithglobalbackend.onrender.com/api";
+// // // const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
+// // const FILE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 // // // const getImageUrl = (path?: string) => {
 // // //   if (!path) return "/placeholder.png";
@@ -475,8 +475,8 @@
 // import WebinarsAndVideosSearchResults from "@/components/search-results/webinarsandvideosresults";
 // import CaseStudiesSearchResults from "@/components/search-results/case-studies";
 
-// const API_URL = "http://localhost:5000/api";
-// const FILE_BASE = "http://localhost:5000/uploads";
+// const API_URL = "https://erithglobalbackend.onrender.com/api";
+// const FILE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 // export default async function SearchResultsPage({ searchParams }: any) {
 //   const query = searchParams?.query || "";
@@ -1279,8 +1279,8 @@ import IndustryCard from "@/components/search-results/industriescards";
 import WebinarsAndVideosSearchResults from "@/components/search-results/webinarsandvideosresults";
 import CaseStudiesSearchResults from "@/components/search-results/case-studies";
 
-const API_URL = "http://localhost:5000/api";
-const FILE_BASE = "http://localhost:5000/uploads";
+const API_URL = "https://erithglobalbackend.onrender.com/api";
+const FILE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 type Product = {
   id: number;

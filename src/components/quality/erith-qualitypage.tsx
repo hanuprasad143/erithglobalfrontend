@@ -34,7 +34,9 @@ export default function ErithQualityInfo() {
 
   /* PRODUCTS API */
   useEffect(() => {
-    fetch("http://localhost:5000/api/product-types/product/40")
+    fetch(
+      "https://erithglobalbackend.onrender.com/api/product-types/product/40",
+    )
       .then((res) => res.json())
       .then((result) => {
         const typesData = result?.types || result?.data || result || [];
@@ -56,7 +58,7 @@ export default function ErithQualityInfo() {
 
   /* QUALITY API */
   useEffect(() => {
-    fetch("http://localhost:5000/api/quality")
+    fetch("https://erithglobalbackend.onrender.com/api/quality")
       .then((res) => res.json())
       .then((data) => {
         const finalData = data?.data || data || [];

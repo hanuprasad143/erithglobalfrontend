@@ -271,10 +271,10 @@
 //   useEffect(() => {
 //     const fetchData = async () => {
 //       try {
-//         const topRes = await fetch("http://localhost:5000/api/blogs/top");
+//         const topRes = await fetch("https://erithglobalbackend.onrender.com/api/blogs/top");
 //         const topData = await topRes.json();
 
-//         const recentRes = await fetch("http://localhost:5000/api/blogs/recent");
+//         const recentRes = await fetch("https://erithglobalbackend.onrender.com/api/blogs/recent");
 //         const recentData = await recentRes.json();
 
 //         setTopBlogs(topData);
@@ -498,10 +498,10 @@
 //   useEffect(() => {
 //     const fetchData = async () => {
 //       try {
-//         const topRes = await fetch("http://localhost:5000/api/blogs/top");
+//         const topRes = await fetch("https://erithglobalbackend.onrender.com/api/blogs/top");
 //         const topData = await topRes.json();
 
-//         const recentRes = await fetch("http://localhost:5000/api/blogs/recent");
+//         const recentRes = await fetch("https://erithglobalbackend.onrender.com/api/blogs/recent");
 //         const recentData = await recentRes.json();
 
 //         setTopBlogs(topData);
@@ -542,8 +542,8 @@
 //                     /> */}
 
 //                     <Image
-//                       // src={`http://localhost:5000${topOne.img}`}
-//                       src={`http://localhost:5000${topOne.img}`}
+//                       // src={`https://erithglobalbackend.onrender.com${topOne.img}`}
+//                       src={`https://erithglobalbackend.onrender.com${topOne.img}`}
 //                       alt={topOne.title}
 //                       fill
 //                       sizes="(max-width: 991px) 100vw, 66vw"
@@ -758,7 +758,7 @@
 //                       <Image
 //                         src={
 //                           item.img
-//                             ? `http://localhost:5000${item.img}`
+//                             ? `https://erithglobalbackend.onrender.com${item.img}`
 //                             : "/assets/img/default.jpg"
 //                         }
 //                         alt={item.title}
@@ -857,10 +857,14 @@ export default function EventAreaFour() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const topRes = await fetch("http://localhost:5000/api/blogs/top");
+        const topRes = await fetch(
+          "https://erithglobalbackend.onrender.com/api/blogs/top",
+        );
         const topData = await topRes.json();
 
-        const recentRes = await fetch("http://localhost:5000/api/blogs/all");
+        const recentRes = await fetch(
+          "https://erithglobalbackend.onrender.com/api/blogs/all",
+        );
         const recentData = await recentRes.json();
 
         setTopBlogs(topData);
@@ -896,8 +900,8 @@ export default function EventAreaFour() {
                     style={{ height: "400px" }}
                   >
                     <Image
-                      // src={`http://localhost:5000${topOne.img}`}
-                      src={`http://localhost:5000${topOne.img}`}
+                      // src={`https://erithglobalbackend.onrender.com${topOne.img}`}
+                      src={`https://erithglobalbackend.onrender.com${topOne.img}`}
                       alt={topOne.title}
                       fill
                       sizes="(max-width: 991px) 100vw, 66vw"

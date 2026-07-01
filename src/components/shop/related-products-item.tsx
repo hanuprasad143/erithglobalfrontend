@@ -33,13 +33,13 @@ type Props = {
 //   item: IBookDT;
 // };
 
-// const IMAGE_BASE = "http://localhost:5000/uploads";
+// const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 export default function RelatedProductsItem({ item }: Props) {
   const imageSrc = item.banner_image
     ? item.banner_image.startsWith("http")
       ? item.banner_image
-      : `http://localhost:5000/uploads/${item.banner_image}`
+      : `https://erithglobalbackend.onrender.com/uploads/${item.banner_image}`
     : "/placeholder.png";
 
   // Use slug for product page link

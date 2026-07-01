@@ -8,11 +8,11 @@
 //   item: IBookDT;
 // };
 
-// const IMAGE_BASE = "http://localhost:5000/uploads";
+// const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 // export default function BlogItemCard({ item }: IProps) {
 //   const imageSrc = item.img
-//     ? `http://localhost:5000${item.img}`
+//     ? `https://erithglobalbackend.onrender.com${item.img}`
 //     : "/placeholder.png";
 //   // Use slug for product page link
 //   const detailsLink = item.link ? item.link : `/products/${item.slug}`;
@@ -133,7 +133,7 @@ type IProps = {
 
 export default function BlogItemCard({ item }: IProps) {
   const imageSrc = item.img
-    ? `http://localhost:5000${item.img}`
+    ? `https://erithglobalbackend.onrender.com${item.img}`
     : "/placeholder.png";
 
   // ✅ FIXED → always blog route

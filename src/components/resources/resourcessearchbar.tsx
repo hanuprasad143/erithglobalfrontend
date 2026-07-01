@@ -29,8 +29,8 @@ import Link from "next/link";
 import { DocumentList } from "../document-list/documentlist";
 import { FaSearch } from "react-icons/fa";
 
-const API_URL = "http://localhost:5000/api";
-// const IMAGE_BASE = "http://localhost:5000/uploads";
+const API_URL = "https://erithglobalbackend.onrender.com/api";
+// const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 /* ================= TYPES ================= */
 

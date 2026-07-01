@@ -19,7 +19,7 @@ type IProps = {
   item: ProductType;
 };
 
-const IMAGE_BASE = "http://localhost:5000/uploads";
+const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 export default function QualityRelatedProductsItem({ item }: IProps) {
   const imageSrc = item.image

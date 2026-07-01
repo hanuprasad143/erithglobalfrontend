@@ -177,7 +177,7 @@ export default function ErithTypesBottom({ product }: Props) {
   //       setLoadingDescriptions(true);
 
   //       const res = await fetch(
-  //         `http://localhost:5000/api/type-descriptions/${product.id}`,
+  //         `https://erithglobalbackend.onrender.com/api/type-descriptions/${product.id}`,
   //       );
 
   //       const data = await res.json();
@@ -201,7 +201,7 @@ export default function ErithTypesBottom({ product }: Props) {
         setLoadingDescriptions(true);
 
         const res = await fetch(
-          `http://localhost:5000/api/type-descriptions/${product.id}`,
+          `https://erithglobalbackend.onrender.com/api/type-descriptions/${product.id}`,
         );
 
         if (!res.ok) throw new Error("Failed to fetch descriptions");
@@ -227,7 +227,7 @@ export default function ErithTypesBottom({ product }: Props) {
         setLoadingSpecs(true);
 
         const res = await fetch(
-          `http://localhost:5000/api/type-specifications/${product.id}`,
+          `https://erithglobalbackend.onrender.com/api/type-specifications/${product.id}`,
         );
 
         const data = await res.json();
@@ -251,7 +251,7 @@ export default function ErithTypesBottom({ product }: Props) {
         setLoadingDownloads(true);
 
         const res = await fetch(
-          `http://localhost:5000/api/type-downloads/${product.id}`,
+          `https://erithglobalbackend.onrender.com/api/type-downloads/${product.id}`,
         );
 
         const data = await res.json();
@@ -276,7 +276,7 @@ export default function ErithTypesBottom({ product }: Props) {
         setLoadingFeatures(true);
 
         const res = await fetch(
-          `http://localhost:5000/api/type-features/${product.id}`,
+          `https://erithglobalbackend.onrender.com/api/type-features/${product.id}`,
         );
 
         const data = await res.json();
@@ -301,7 +301,7 @@ export default function ErithTypesBottom({ product }: Props) {
         setLoadingInsights(true);
 
         const res = await fetch(
-          `http://localhost:5000/api/type-insights/${product.id}`,
+          `https://erithglobalbackend.onrender.com/api/type-insights/${product.id}`,
         );
 
         const data = await res.json();
@@ -423,7 +423,7 @@ export default function ErithTypesBottom({ product }: Props) {
             //                 {/* Image */}
             //                 {desc.image && (
             //                   <Image
-            //                     src={`http://localhost:5000/uploads/${desc.image}`}
+            //                     src={`https://erithglobalbackend.onrender.com/uploads/${desc.image}`}
             //                     alt={desc.title || product?.name}
             //                     width={200}
             //                     height={200}
@@ -481,7 +481,7 @@ export default function ErithTypesBottom({ product }: Props) {
                             {/* Image */}
                             {desc.image && (
                               <Image
-                                src={`http://localhost:5000/uploads/${desc.image}`}
+                                src={`https://erithglobalbackend.onrender.com/uploads/${desc.image}`}
                                 alt={desc.title || product?.name}
                                 width={200}
                                 height={200}
@@ -716,8 +716,8 @@ export default function ErithTypesBottom({ product }: Props) {
 
                             <div className="d-flex align-items-center justify-content-start mt-4">
                               <a
-                                // href={`http://localhost:5000${service.file_url}`}
-                                href={`http://localhost:5000/uploads/${service.file_url}`}
+                                // href={`https://erithglobalbackend.onrender.com${service.file_url}`}
+                                href={`https://erithglobalbackend.onrender.com/uploads/${service.file_url}`}
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >

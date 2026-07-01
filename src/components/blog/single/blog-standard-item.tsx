@@ -128,7 +128,7 @@
 //         setBlog(null); // 🔥 reset old data
 
 //         const res = await fetch(
-//           `http://localhost:5000/api/blogs/${slug}`,
+//           `https://erithglobalbackend.onrender.com/api/blogs/${slug}`,
 //           { cache: "no-store" }
 //         );
 
@@ -161,7 +161,7 @@
 //         <Image
 //           src={
 //             blog.img
-//               ? `http://localhost:5000${blog.img}`
+//               ? `https://erithglobalbackend.onrender.com${blog.img}`
 //               : "/assets/img/default.jpg"
 //           }
 //           alt={blog.title}
@@ -288,14 +288,19 @@ export default function BlogStandardItem() {
         setBlog(null);
 
         // current blog
-        const res = await fetch(`http://localhost:5000/api/blogs/${slug}`, {
-          cache: "no-store",
-        });
+        const res = await fetch(
+          `https://erithglobalbackend.onrender.com/api/blogs/${slug}`,
+          {
+            cache: "no-store",
+          },
+        );
         const data = await res.json();
         setBlog(data);
 
         // ✅ fetch all blogs for navigation
-        const listRes = await fetch(`http://localhost:5000/api/blogs/recent`);
+        const listRes = await fetch(
+          `https://erithglobalbackend.onrender.com/api/blogs/recent`,
+        );
         const listData = await listRes.json();
 
         setBlogs(listData);
@@ -333,7 +338,7 @@ export default function BlogStandardItem() {
         <Image
           src={
             blog.img
-              ? `http://localhost:5000${blog.img}`
+              ? `https://erithglobalbackend.onrender.com${blog.img}`
               : "/assets/img/default.jpg"
           }
           alt={blog.title}

@@ -98,7 +98,9 @@ export default function BlogSidebarArea() {
     const fetchData = async () => {
       try {
         // ✅ fetch top posts
-        const topRes = await fetch("http://localhost:5000/api/blogs/top");
+        const topRes = await fetch(
+          "https://erithglobalbackend.onrender.com/api/blogs/top",
+        );
         const topData = await topRes.json();
 
         // sort by top_position ascending & take 1–5
@@ -109,7 +111,9 @@ export default function BlogSidebarArea() {
         setTopPosts(sortedTop);
 
         // ✅ fetch recent posts
-        const recentRes = await fetch("http://localhost:5000/api/blogs/recent");
+        const recentRes = await fetch(
+          "https://erithglobalbackend.onrender.com/api/blogs/recent",
+        );
         const recentData = await recentRes.json();
 
         setRecentPosts(recentData);
@@ -174,7 +178,7 @@ export default function BlogSidebarArea() {
               <Image
                 src={
                   blog.img
-                    ? `http://localhost:5000${blog.img}`
+                    ? `https://erithglobalbackend.onrender.com${blog.img}`
                     : "/assets/img/default.jpg"
                 }
                 alt={blog.title}

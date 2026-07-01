@@ -146,7 +146,7 @@
 // import HeaderStickyWrapper from "./header-sticky-provider/header-sticky-wrapper";
 // import OffcanvasButton from "./button/offcanvas-btn";
 
-// const API_URL = "http://localhost:5000/api";
+// const API_URL = "https://erithglobalbackend.onrender.com/api";
 
 // type SearchResult = {
 //   id: number;
@@ -407,7 +407,7 @@
 // import OffcanvasButton from "./button/offcanvas-btn";
 // import { DocumentList } from "../document-list/documentlist";
 
-// const API_URL = "http://localhost:5000/api";
+// const API_URL = "https://erithglobalbackend.onrender.com/api";
 
 // /* ✅ TYPES */
 // type Product = {
@@ -437,7 +437,7 @@
 //   documents: Document[];
 // };
 
-// const IMAGE_BASE = "http://localhost:5000/uploads";
+// const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 // const getImageUrl = (path?: string) => {
 //   if (!path) return "/placeholder.png";
@@ -816,7 +816,7 @@
 // import OffcanvasButton from "./button/offcanvas-btn";
 // import { DocumentList } from "../document-list/documentlist";
 
-// const API_URL = "http://localhost:5000/api";
+// const API_URL = "https://erithglobalbackend.onrender.com/api";
 
 // /* ✅ TYPES */
 // type Product = {
@@ -887,7 +887,7 @@
 //   caseStudies: knowledgeCenter[]; //20-04-2026
 // };
 
-// const IMAGE_BASE = "http://localhost:5000/uploads";
+// const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 // const getImageUrl = (path?: string) => {
 //   if (!path) return "/placeholder.png";

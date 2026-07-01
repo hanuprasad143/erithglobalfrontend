@@ -16,7 +16,7 @@ type IProps = {
   item?: QualityItem;
 };
 
-const BASE_URL = "http://localhost:5000/uploads";
+const BASE_URL = "https://erithglobalbackend.onrender.com/uploads";
 
 export default function QualityCard({ item }: IProps) {
   // ✅ SAFETY (prevents crash)

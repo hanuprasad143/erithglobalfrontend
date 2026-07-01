@@ -13,9 +13,12 @@ export const metadata: Metadata = {
 
 async function getAboutData() {
   try {
-    const res = await fetch("http://localhost:5000/api/company-pages/quality", {
-      cache: "no-store",
-    });
+    const res = await fetch(
+      "https://erithglobalbackend.onrender.com/api/company-pages/quality",
+      {
+        cache: "no-store",
+      },
+    );
     if (!res.ok) return null;
     return await res.json();
   } catch (error) {

@@ -23,7 +23,7 @@
 // // import ErithTypesBottom from "@/app/(shop)/shop-details/_components/erith-types-bottom";
 // import Typesofproducts from "./typesofProducts";
 
-// const IMAGE_BASE = "http://localhost:5000/uploads";
+// const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 // const results = [
 //   { id: "home", title: "Description" },
@@ -165,7 +165,7 @@
 //   useEffect(() => {
 //     if (!slug) return;
 
-//     fetch(`http://localhost:5000/api/products/${slug}`)
+//     fetch(`https://erithglobalbackend.onrender.com/api/products/${slug}`)
 //       .then((res) => res.json())
 //       .then((res) => {
 //         setData(res);
@@ -636,7 +636,7 @@ import RelatedProducts from "@/app/(shop)/shop-details/_components/related-produ
 import Link from "next/link";
 import Typesofproducts from "./typesofProducts";
 
-const IMAGE_BASE = "http://localhost:5000/uploads";
+const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 const results = [
   { id: "home", title: "Description" },
@@ -734,7 +734,7 @@ export default function ProductDesc() {
   useEffect(() => {
     if (!slug) return;
 
-    fetch(`http://localhost:5000/api/products/${slug}`)
+    fetch(`https://erithglobalbackend.onrender.com/api/products/${slug}`)
       .then((res) => res.json())
       .then((res) => {
         setData(res);

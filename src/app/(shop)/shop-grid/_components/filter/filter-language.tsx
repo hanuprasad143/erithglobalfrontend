@@ -11,7 +11,7 @@
 //   name: string;
 // }
 
-// const BASE_URL = "http://localhost:5000/api";
+// const BASE_URL = "https://erithglobalbackend.onrender.com/api";
 
 // export default function FilterIndustry({ onChange }: Props) {
 //   const [industries, setIndustries] = useState<Industry[]>([]);
@@ -88,7 +88,7 @@
 //   name: string;
 // }
 
-// const BASE_URL = "http://localhost:5000/api";
+// const BASE_URL = "https://erithglobalbackend.onrender.com/api";
 // const PARAM_KEY = "Industry";
 
 // // No onChange prop — writes directly to URL
@@ -191,7 +191,7 @@
 //   name: string;
 // }
 
-// const BASE_URL = "http://localhost:5000/api";
+// const BASE_URL = "https://erithglobalbackend.onrender.com/api";
 // const PARAM_KEY = "Industry";
 
 // export default function FilterIndustry() {
@@ -284,7 +284,7 @@ interface Industry {
   name: string;
 }
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://erithglobalbackend.onrender.com/api";
 const PARAM_KEY = "Industry";
 
 const toSlug = (text: string) =>

@@ -20,7 +20,7 @@ type Props = {
   downloads: Download[];
 };
 
-const IMAGE_BASE = "http://localhost:5000/uploads";
+const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 export default function ServiceFour({ downloads }: Props) {
   const [selectedType, setSelectedType] = useState("");

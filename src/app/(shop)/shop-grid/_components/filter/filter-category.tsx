@@ -5,7 +5,7 @@
 //   onChange: (sizes: string[]) => void;
 // };
 
-// const BASE_URL = "http://localhost:5000/api";
+// const BASE_URL = "https://erithglobalbackend.onrender.com/api";
 
 // interface ProductType {
 //   id: number;
@@ -76,7 +76,7 @@
 // import { useEffect, useState, useTransition } from "react";
 // import { useRouter, useSearchParams, usePathname } from "next/navigation";
 
-// const BASE_URL = "http://localhost:5000/api";
+// const BASE_URL = "https://erithglobalbackend.onrender.com/api";
 // const PARAM_KEY = "Product Type";
 
 // interface ProductType {
@@ -168,7 +168,7 @@
 import { useEffect, useState, useTransition } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://erithglobalbackend.onrender.com/api";
 const PARAM_KEY = "Product Type";
 
 // slug helpers

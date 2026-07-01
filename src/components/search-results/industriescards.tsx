@@ -23,7 +23,7 @@ type Props = {
   industry: IndustryData;
 };
 
-const IMAGE_BASE = "http://localhost:5000/uploads";
+const IMAGE_BASE = "https://erithglobalbackend.onrender.com/uploads";
 
 export default function IndustryCard({ industry }: Props) {
   return (

@@ -22,7 +22,7 @@
 //   // useEffect(() => {
 //   //   if (!productId) return;
 
-//   //   fetch(`http://localhost:5000/api/product-types?product_id=${productId}`)
+//   //   fetch(`https://erithglobalbackend.onrender.com/api/product-types?product_id=${productId}`)
 //   //     .then((res) => res.json())
 //   //     .then((data) => {
 //   //       // ensure only items matching this productId
@@ -38,7 +38,7 @@
 //   useEffect(() => {
 //   if (!productId) return;
 
-//   fetch(`http://localhost:5000/api/product-types?product_id=${productId}`)
+//   fetch(`https://erithglobalbackend.onrender.com/api/product-types?product_id=${productId}`)
 //     .then((res) => res.json())
 //     .then((data) => {
 //       const filtered = (data || []).filter(
@@ -63,7 +63,7 @@
 //   useEffect(() => {
 //     if (!productId) return;
 
-//     fetch(`http://localhost:5000/api/products`)
+//     fetch(`https://erithglobalbackend.onrender.com/api/products`)
 //       .then((res) => res.json())
 //       .then((data) => {
 //         // ✅ find correct product by id
@@ -212,7 +212,7 @@
 //                         }}
 //                       >
 //                         <Image
-//                           src={`http://localhost:5000/uploads/${item.image}`}
+//                           src={`https://erithglobalbackend.onrender.com/uploads/${item.image}`}
 //                           alt={item.name}
 //                           fill
 //                           sizes="120px"
@@ -234,7 +234,7 @@
 //                         }}
 //                       >
 //                         <Image
-//                           src={`http://localhost:5000/uploads/${item.image}`}
+//                           src={`https://erithglobalbackend.onrender.com/uploads/${item.image}`}
 //                           alt={item.name}
 //                           fill
 //                           sizes="(max-width: 576px) 100vw, (max-width: 768px) 50vw, 180px"
@@ -331,7 +331,7 @@
 //   useEffect(() => {
 //     if (!productId) return;
 
-//     fetch(`http://localhost:5000/api/product-types?product_id=${productId}`)
+//     fetch(`https://erithglobalbackend.onrender.com/api/product-types?product_id=${productId}`)
 //       .then((res) => res.json())
 //       .then((data) => {
 //         const filtered = (data || []).filter(
@@ -356,7 +356,7 @@
 //   useEffect(() => {
 //     if (!productId) return;
 
-//     fetch(`http://localhost:5000/api/products`)
+//     fetch(`https://erithglobalbackend.onrender.com/api/products`)
 //       .then((res) => res.json())
 //       .then((data) => {
 //         const product = (data || []).find(
@@ -496,7 +496,7 @@
 //                         }}
 //                       >
 //                         <Image
-//                           src={`http://localhost:5000/uploads/${item.image}`}
+//                           src={`https://erithglobalbackend.onrender.com/uploads/${item.image}`}
 //                           alt={item.name}
 //                           fill
 //                           sizes="(max-width: 576px) 100vw, (max-width: 768px) 50vw, 180px"
@@ -592,7 +592,7 @@
 //   useEffect(() => {
 //     if (!productId) return;
 
-//     fetch(`http://localhost:5000/api/product-types?product_id=${productId}`)
+//     fetch(`https://erithglobalbackend.onrender.com/api/product-types?product_id=${productId}`)
 //       .then((res) => res.json())
 //       .then((data) => {
 //         const filtered = (data || []).filter(
@@ -617,7 +617,7 @@
 //   useEffect(() => {
 //     if (!productId) return;
 
-//     fetch(`http://localhost:5000/api/products`)
+//     fetch(`https://erithglobalbackend.onrender.com/api/products`)
 //       .then((res) => res.json())
 //       .then((data) => {
 //         const product = (data || []).find(
@@ -761,7 +761,7 @@
 //                         }}
 //                       >
 //                         <Image
-//                           src={`http://localhost:5000/uploads/${item.image}`}
+//                           src={`https://erithglobalbackend.onrender.com/uploads/${item.image}`}
 //                           alt={item.name}
 //                           fill
 //                           sizes="(max-width: 576px) 25vw, (max-width: 768px) 25vw, 180px"
@@ -890,7 +890,9 @@ export default function Typesofproducts({ productId }: TypesofproductsProps) {
   useEffect(() => {
     if (!productId) return;
 
-    fetch(`http://localhost:5000/api/product-types?product_id=${productId}`)
+    fetch(
+      `https://erithglobalbackend.onrender.com/api/product-types?product_id=${productId}`,
+    )
       .then((res) => res.json())
       .then((data: ProductType[]) => {
         // Fix 6: replaced any in .then callback
@@ -916,7 +918,7 @@ export default function Typesofproducts({ productId }: TypesofproductsProps) {
   useEffect(() => {
     if (!productId) return;
 
-    fetch(`http://localhost:5000/api/products`)
+    fetch(`https://erithglobalbackend.onrender.com/api/products`)
       .then((res) => res.json())
       .then((data: ProductStyleHeading[]) => {
         // Fix 7: replaced any in .then callback
@@ -1062,7 +1064,7 @@ export default function Typesofproducts({ productId }: TypesofproductsProps) {
                         }}
                       >
                         <Image
-                          src={`http://localhost:5000/uploads/${item.image}`}
+                          src={`https://erithglobalbackend.onrender.com/uploads/${item.image}`}
                           alt={item.name}
                           fill
                           sizes="(max-width: 576px) 25vw, (max-width: 768px) 25vw, 180px"
@@ -1154,7 +1156,7 @@ export default function Typesofproducts({ productId }: TypesofproductsProps) {
                         }}
                       >
                         <Image
-                          src={`http://localhost:5000/uploads/${item.image}`}
+                          src={`https://erithglobalbackend.onrender.com/uploads/${item.image}`}
                           alt={item.name}
                           fill
                           sizes="(max-width: 576px) 70px, (max-width: 1024px) 12vw, 130px"

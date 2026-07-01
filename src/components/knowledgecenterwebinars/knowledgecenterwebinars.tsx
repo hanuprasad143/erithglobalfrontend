@@ -75,7 +75,7 @@ export default function KnowledgeCenterWebinarsDetails() {
     const category = "Webinars";
 
     fetch(
-      `http://localhost:5000/api/successstories?category_type=${encodeURIComponent(category)}`,
+      `https://erithglobalbackend.onrender.com/api/successstories?category_type=${encodeURIComponent(category)}`,
     )
       .then((res) => res.json())
       .then(setWebinars);
@@ -84,7 +84,9 @@ export default function KnowledgeCenterWebinarsDetails() {
   useEffect(() => {
     if (!slug) return;
 
-    fetch(`http://localhost:5000/api/successstories/slug/${slug}`)
+    fetch(
+      `https://erithglobalbackend.onrender.com/api/successstories/slug/${slug}`,
+    )
       .then((res) => res.json())
       .then((data: Story) => {
         setStory(data);
@@ -101,7 +103,7 @@ export default function KnowledgeCenterWebinarsDetails() {
   // useEffect(() => {
   //   if (!slug) return;
 
-  //   fetch(`http://localhost:5000/api/successstories/slug/${slug}`)
+  //   fetch(`https://erithglobalbackend.onrender.com/api/successstories/slug/${slug}`)
   //     .then((res) => res.json())
   //     .then((data: Story) => setStory(data))
   //     .catch((err) => console.error(err));
@@ -124,7 +126,7 @@ export default function KnowledgeCenterWebinarsDetails() {
         {/* LEFT SIDE */}
         <div className="col-lg-9">
           {/* <img
-            src={`http://localhost:5000${story.image}`}
+            src={`https://erithglobalbackend.onrender.com${story.image}`}
             alt={story.title}
             className="banner-img"
           /> */}
@@ -137,7 +139,7 @@ export default function KnowledgeCenterWebinarsDetails() {
 
           {/* <div className="tp-course-details-2-widget-thumb p-relative mt-30">
             <Image
-              src={`http://localhost:5000${story.video_thumbnail_image}`}
+              src={`https://erithglobalbackend.onrender.com${story.video_thumbnail_image}`}
               alt="course-img"
               style={{ border: "2px solid #1d3a72" }}
               width={500}
@@ -167,7 +169,7 @@ export default function KnowledgeCenterWebinarsDetails() {
                 <>
                   {/* ✅ Thumbnail */}
                   <Image
-                    src={`http://localhost:5000${
+                    src={`https://erithglobalbackend.onrender.com${
                       story.video_thumbnail_image || story.image
                     }`}
                     alt="video-thumbnail"
@@ -229,13 +231,13 @@ export default function KnowledgeCenterWebinarsDetails() {
 
           {/* <div className="pdf-clean">
             <iframe
-              src={`http://localhost:5000${story.pdf_url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+              src={`https://erithglobalbackend.onrender.com${story.pdf_url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
             />
           </div> */}
           {story.pdf_url && (
             <div style={{ marginTop: "30px" }}>
               <embed
-                src={`http://localhost:5000${story.pdf_url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+                src={`https://erithglobalbackend.onrender.com${story.pdf_url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
                 type="application/pdf"
                 width="100%"
                 height="1200px"
@@ -321,7 +323,7 @@ export default function KnowledgeCenterWebinarsDetails() {
             </p>
 
             {/* <a
-              href={`http://localhost:5000${story.pdf_url}`}
+              href={`https://erithglobalbackend.onrender.com${story.pdf_url}`}
               target="_blank"
               className="download"
             >
@@ -333,7 +335,7 @@ export default function KnowledgeCenterWebinarsDetails() {
 
       <div className="tp-course-details-2-widget-thumb p-relative mt-30">
         {/* <Image
-                    src={`http://localhost:5000${story.video_thumbnail_image}`}
+                    src={`https://erithglobalbackend.onrender.com${story.video_thumbnail_image}`}
                     alt="course-img"
                     style={{ border: "2px solid #1d3a72" }}
                     width={500}
@@ -385,7 +387,7 @@ export default function KnowledgeCenterWebinarsDetails() {
                     borderRadius: "12px",
                     overflow: "hidden",
                     height: "230px",
-                    backgroundImage: `url(http://localhost:5000${story.image})`, // ✅ FIXED
+                    backgroundImage: `url(https://erithglobalbackend.onrender.com${story.image})`, // ✅ FIXED
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

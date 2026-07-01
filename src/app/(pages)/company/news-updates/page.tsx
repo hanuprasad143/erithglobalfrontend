@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 async function getAboutData() {
   try {
     const res = await fetch(
-      "http://localhost:5000/api/company-pages/news-updates",
+      "https://erithglobalbackend.onrender.com/api/company-pages/news-updates",
       {
         cache: "no-store",
       },

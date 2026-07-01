@@ -39,7 +39,7 @@ export default function RelatedProducts({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://erithglobalbackend.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => {
         // 🔹 filter same subcategory and remove current product

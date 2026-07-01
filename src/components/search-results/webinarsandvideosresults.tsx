@@ -33,7 +33,7 @@ type Props = {
 };
 
 // ✅ FIX: remove /uploads here
-const IMAGE_BASE = "http://localhost:5000";
+const IMAGE_BASE = "https://erithglobalbackend.onrender.com";
 
 export default function WebinarsAndVideosSearchResults({ item }: Props) {
   // ✅ Build correct image URL

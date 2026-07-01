@@ -456,7 +456,7 @@
 // import { useTransition } from "react";
 
 // const PARAM_KEY = "Product Type";
-// const BASE_URL = "http://localhost:5000/api";
+// const BASE_URL = "https://erithglobalbackend.onrender.com/api";
 
 // // slug helpers
 // const toSlug = (text: string) =>
@@ -543,7 +543,7 @@
 // import { useEffect, useState, useTransition } from "react";
 // import { useRouter, useSearchParams, usePathname } from "next/navigation";
 
-// const BASE_URL = "http://localhost:5000/api";
+// const BASE_URL = "https://erithglobalbackend.onrender.com/api";
 // const PARAM_KEY = "Product Type";
 
 // const toSlug = (text: string) =>
@@ -620,7 +620,7 @@
 import { useEffect, useState, useTransition } from "react";
 import { useRouter, useSearchParams, usePathname } from "next/navigation";
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://erithglobalbackend.onrender.com/api";
 const PARAM_KEY = "Product Type";
 
 const toSlug = (text: string) =>
