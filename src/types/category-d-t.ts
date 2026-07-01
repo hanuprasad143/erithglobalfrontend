@@ -4,4 +4,5 @@ export interface ICategoryDT {
   description: string;
   icon: string;
   color: string;
+  badge:string;
 }

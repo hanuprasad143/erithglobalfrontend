@@ -25,7 +25,7 @@ export default function Sidebar({ pdf_url }: { pdf_url: string }) {
       </p>
 
       <a
-        href={`https://erithglobalbackend.onrender.com${pdf_url}`}
+        href={`http://localhost:5000${pdf_url}`}
         target="_blank"
         className="download"
       >

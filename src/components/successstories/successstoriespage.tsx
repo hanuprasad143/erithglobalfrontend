@@ -60,7 +60,7 @@ export default function SuccessStoryDetails() {
     const category = "Success Stories";
 
     fetch(
-      `https://erithglobalbackend.onrender.com/api/successstories?category_type=${encodeURIComponent(category)}`,
+      `http://localhost:5000/api/successstories?category_type=${encodeURIComponent(category)}`,
     )
       .then((res) => res.json())
       .then(setSuccessStories);
@@ -69,9 +69,7 @@ export default function SuccessStoryDetails() {
   useEffect(() => {
     if (!slug) return;
 
-    fetch(
-      `https://erithglobalbackend.onrender.com/api/successstories/slug/${slug}`,
-    )
+    fetch(`http://localhost:5000/api/successstories/slug/${slug}`)
       .then((res) => res.json())
       .then((data: Story) => {
         setStory(data);
@@ -87,7 +85,7 @@ export default function SuccessStoryDetails() {
   // useEffect(() => {
   //   if (!slug) return;
 
-  //   fetch(`https://erithglobalbackend.onrender.com/api/successstories/slug/${slug}`)
+  //   fetch(`http://localhost:5000/api/successstories/slug/${slug}`)
   //     .then((res) => res.json())
   //     .then((data: Story) => setStory(data))
   //     .catch((err) => console.error(err));
@@ -110,20 +108,20 @@ export default function SuccessStoryDetails() {
         {/* LEFT SIDE */}
         <div className="col-lg-9">
           <img
-            src={`https://erithglobalbackend.onrender.com${story.image}`}
+            src={`http://localhost:5000${story.image}`}
             alt={story.title}
             className="banner-img"
           />
 
           {/* <div className="pdf-clean">
             <iframe
-              src={`https://erithglobalbackend.onrender.com${story.pdf_url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+              src={`http://localhost:5000${story.pdf_url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
             />
           </div> */}
           {story.pdf_url && (
             <div style={{ marginTop: "30px" }}>
               <embed
-                src={`https://erithglobalbackend.onrender.com${story.pdf_url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+                src={`http://localhost:5000${story.pdf_url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
                 type="application/pdf"
                 width="100%"
                 height="1200px"
@@ -158,7 +156,7 @@ export default function SuccessStoryDetails() {
             </p>
 
             <a
-              href={`https://erithglobalbackend.onrender.com${story.pdf_url}`}
+              href={`http://localhost:5000${story.pdf_url}`}
               target="_blank"
               className="download"
             >
@@ -231,14 +229,14 @@ export default function SuccessStoryDetails() {
             </p>
 
             {/* <a
-              href={`https://erithglobalbackend.onrender.com${story.pdf_url}`}
+              href={`http://localhost:5000${story.pdf_url}`}
               target="_blank"
               className="download"
             >
               Download
             </a> */}
             <a
-              href={`https://erithglobalbackend.onrender.com${story.pdf_url}`}
+              href={`http://localhost:5000${story.pdf_url}`}
               target="_blank"
               className="download"
             >
@@ -293,7 +291,7 @@ export default function SuccessStoryDetails() {
                     borderRadius: "12px",
                     overflow: "hidden",
                     height: "230px",
-                    backgroundImage: `url(https://erithglobalbackend.onrender.com${story.image})`, // ✅ FIXED
+                    backgroundImage: `url(http://localhost:5000${story.image})`, // ✅ FIXED
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

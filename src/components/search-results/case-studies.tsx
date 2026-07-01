@@ -32,7 +32,7 @@ type Props = {
 };
 
 // ✅ FIX: remove /uploads here
-const IMAGE_BASE = "https://erithglobalbackend.onrender.com";
+const IMAGE_BASE = "http://localhost:5000";
 
 export default function CaseStudiesSearchResults({ item }: Props) {
   // ✅ Build correct image URL

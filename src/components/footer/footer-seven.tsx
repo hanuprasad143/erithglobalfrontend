@@ -1855,6 +1855,8 @@ export default function FooterSeven({
         }
       `}</style>
 
+      
+
       <footer
         style={{
           marginTop: "60px",
@@ -2106,6 +2108,7 @@ export default function FooterSeven({
             </div>
           </div>
         </div>
+        
       </footer>
     </>
   );

@@ -57,8 +57,8 @@ export default function HomePage() {
 
       <EventArea />
       <PartnersCustomersSection />
-
-      {/* <RequestCallStyle1 /> */}
+      {/* 
+      <RequestCallStyle1 /> */}
 
       {/* about area start */}
       {/* <AboutOne /> */}
@@ -92,7 +92,7 @@ export default function HomePage() {
 
       {/* cta area start */}
       {/* <div style={{ marginRight: "20px" }}> */}
-        <ContactForm />
+      <ContactForm />
       {/* </div> */}
 
       {/* <BackToTop/> */}

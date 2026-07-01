@@ -373,9 +373,6 @@
 
 // export default AboutStyle1;
 
-
-
-
 "use client";
 
 import Image from "next/image";
@@ -499,7 +496,7 @@ const AboutStyle1 = () => {
           right: 16px;
           bottom: 24px;
           // padding: 7px 36px 20px 24px;
-           padding: 20px 20px 20px 20px;
+          padding: 20px 20px 20px 20px;
           border-radius: 6px;
           border: 1px solid rgba(1, 15, 28, 0.1);
           background: rgba(246, 244, 238, 0.6);

@@ -769,7 +769,7 @@
 //   useEffect(() => {
 //     const fetchStories = async () => {
 //       try {
-//         const res = await fetch("https://erithglobalbackend.onrender.com/api/successstories");
+//         const res = await fetch("http://localhost:5000/api/successstories");
 //         const data = await res.json();
 //         setSuccessStories(data);
 //       } catch (err) {
@@ -1292,7 +1292,7 @@
 //                           borderRadius: "12px",
 //                           overflow: "hidden",
 //                           height: "180px",
-//                           backgroundImage: `url(https://erithglobalbackend.onrender.com${story.image})`,
+//                           backgroundImage: `url(http://localhost:5000${story.image})`,
 //                           backgroundSize: "cover",
 //                           backgroundPosition: "center",
 //                         }}
@@ -1656,9 +1656,7 @@ export default function KnowledgeCenterBanner({
   useEffect(() => {
     const fetchStories = async () => {
       try {
-        const res = await fetch(
-          "https://erithglobalbackend.onrender.com/api/successstories",
-        );
+        const res = await fetch("http://localhost:5000/api/successstories");
         const data = await res.json();
         setSuccessStories(data);
       } catch (err) {
@@ -2210,7 +2208,7 @@ export default function KnowledgeCenterBanner({
                           borderRadius: "12px",
                           overflow: "hidden",
                           height: "180px",
-                          backgroundImage: `url(https://erithglobalbackend.onrender.com${story.image})`,
+                          backgroundImage: `url(http://localhost:5000${story.image})`,
                           backgroundSize: "cover",
                           backgroundPosition: "center",
                         }}

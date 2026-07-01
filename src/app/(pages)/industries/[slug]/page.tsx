@@ -64,7 +64,7 @@ import IndustriesBanner from "@/components/industries/banner/industries-banner";
 import AboutIndustries from "@/components/industries/about-industries";
 import ContactForm from "@/components/form/contact-form";
 
-const BASE_URL = "https://erithglobalbackend.onrender.com/api";
+const BASE_URL = "http://localhost:5000/api";
 
 type PageProps = {
   params: {

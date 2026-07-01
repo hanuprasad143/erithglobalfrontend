@@ -348,7 +348,7 @@
 //                 overflow: "hidden",
 //                 height: "180px",
 //                 // backgroundImage: `url(${currentStory.image})`,
-//                 backgroundImage: `url(https://erithglobalbackend.onrender.com${currentStory.image})`,
+//                 backgroundImage: `url(http://localhost:5000${currentStory.image})`,
 //                 backgroundSize: "cover",
 //                 backgroundPosition: "center",
 //               }}
@@ -611,7 +611,7 @@ export default function KnowledgeFilterSidebar({
                 borderRadius: "12px",
                 overflow: "hidden",
                 height: "180px",
-                backgroundImage: `url(https://erithglobalbackend.onrender.com${currentStory.image})`,
+                backgroundImage: `url(http://localhost:5000${currentStory.image})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}

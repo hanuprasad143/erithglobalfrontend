@@ -22,7 +22,7 @@
 //   // useEffect(() => {
 //   //   if (!productId) return;
 
-//   //   fetch(`https://erithglobalbackend.onrender.com/api/product-types?product_id=${productId}`)
+//   //   fetch(`http://localhost:5000/api/product-types?product_id=${productId}`)
 //   //     .then((res) => res.json())
 //   //     .then((data) => {
 //   //       // ensure only items matching this productId
@@ -38,7 +38,7 @@
 //   useEffect(() => {
 //   if (!productId) return;
 
-//   fetch(`https://erithglobalbackend.onrender.com/api/product-types?product_id=${productId}`)
+//   fetch(`http://localhost:5000/api/product-types?product_id=${productId}`)
 //     .then((res) => res.json())
 //     .then((data) => {
 //       const filtered = (data || []).filter(
@@ -63,7 +63,7 @@
 //   useEffect(() => {
 //     if (!productId) return;
 
-//     fetch(`https://erithglobalbackend.onrender.com/api/products`)
+//     fetch(`http://localhost:5000/api/products`)
 //       .then((res) => res.json())
 //       .then((data) => {
 //         // ✅ find correct product by id
@@ -212,7 +212,7 @@
 //                         }}
 //                       >
 //                         <Image
-//                           src={`https://erithglobalbackend.onrender.com/uploads/${item.image}`}
+//                           src={`http://localhost:5000/uploads/${item.image}`}
 //                           alt={item.name}
 //                           fill
 //                           sizes="120px"
@@ -234,7 +234,7 @@
 //                         }}
 //                       >
 //                         <Image
-//                           src={`https://erithglobalbackend.onrender.com/uploads/${item.image}`}
+//                           src={`http://localhost:5000/uploads/${item.image}`}
 //                           alt={item.name}
 //                           fill
 //                           sizes="(max-width: 576px) 100vw, (max-width: 768px) 50vw, 180px"
@@ -331,7 +331,7 @@
 //   useEffect(() => {
 //     if (!productId) return;
 
-//     fetch(`https://erithglobalbackend.onrender.com/api/product-types?product_id=${productId}`)
+//     fetch(`http://localhost:5000/api/product-types?product_id=${productId}`)
 //       .then((res) => res.json())
 //       .then((data) => {
 //         const filtered = (data || []).filter(
@@ -356,7 +356,7 @@
 //   useEffect(() => {
 //     if (!productId) return;
 
-//     fetch(`https://erithglobalbackend.onrender.com/api/products`)
+//     fetch(`http://localhost:5000/api/products`)
 //       .then((res) => res.json())
 //       .then((data) => {
 //         const product = (data || []).find(
@@ -496,7 +496,7 @@
 //                         }}
 //                       >
 //                         <Image
-//                           src={`https://erithglobalbackend.onrender.com/uploads/${item.image}`}
+//                           src={`http://localhost:5000/uploads/${item.image}`}
 //                           alt={item.name}
 //                           fill
 //                           sizes="(max-width: 576px) 100vw, (max-width: 768px) 50vw, 180px"
@@ -592,7 +592,7 @@
 //   useEffect(() => {
 //     if (!productId) return;
 
-//     fetch(`https://erithglobalbackend.onrender.com/api/product-types?product_id=${productId}`)
+//     fetch(`http://localhost:5000/api/product-types?product_id=${productId}`)
 //       .then((res) => res.json())
 //       .then((data) => {
 //         const filtered = (data || []).filter(
@@ -617,7 +617,7 @@
 //   useEffect(() => {
 //     if (!productId) return;
 
-//     fetch(`https://erithglobalbackend.onrender.com/api/products`)
+//     fetch(`http://localhost:5000/api/products`)
 //       .then((res) => res.json())
 //       .then((data) => {
 //         const product = (data || []).find(
@@ -761,7 +761,7 @@
 //                         }}
 //                       >
 //                         <Image
-//                           src={`https://erithglobalbackend.onrender.com/uploads/${item.image}`}
+//                           src={`http://localhost:5000/uploads/${item.image}`}
 //                           alt={item.name}
 //                           fill
 //                           sizes="(max-width: 576px) 25vw, (max-width: 768px) 25vw, 180px"
@@ -890,9 +890,7 @@ export default function Typesofproducts({ productId }: TypesofproductsProps) {
   useEffect(() => {
     if (!productId) return;
 
-    fetch(
-      `https://erithglobalbackend.onrender.com/api/product-types?product_id=${productId}`,
-    )
+    fetch(`http://localhost:5000/api/product-types?product_id=${productId}`)
       .then((res) => res.json())
       .then((data: ProductType[]) => {
         // Fix 6: replaced any in .then callback
@@ -918,7 +916,7 @@ export default function Typesofproducts({ productId }: TypesofproductsProps) {
   useEffect(() => {
     if (!productId) return;
 
-    fetch(`https://erithglobalbackend.onrender.com/api/products`)
+    fetch(`http://localhost:5000/api/products`)
       .then((res) => res.json())
       .then((data: ProductStyleHeading[]) => {
         // Fix 7: replaced any in .then callback
@@ -994,7 +992,7 @@ export default function Typesofproducts({ productId }: TypesofproductsProps) {
           {/* LEFT SIDE */}
           <div className="col-lg-4 col-12 mb-4 mb-lg-0">
             <div className="row g-0">
-              <div className="col-11">
+              {/* <div className="col-11">
                 <div
                   ref={scrollRef}
                   className="d-flex flex-column"
@@ -1036,19 +1034,20 @@ export default function Typesofproducts({ productId }: TypesofproductsProps) {
                         }}
                       >
                         <div className="mb-1" style={{ fontSize: "18px" }}>
-                          <h5 style={{ fontSize: "18px" }}>{item.name}</h5>
+                          <h5 style={{ fontSize: "15px" }}>{item.name}</h5>
                         </div>
 
                         <span
                           className="text-muted small"
                           style={{
-                            fontSize: "15px",
+                            fontSize: "10px",
                             lineHeight: "1.2",
                           }}
                         >
                           {item.product_type}
                         </span>
                       </div>
+                      
 
                       <div
                         className="tp-event-3-thumb position-relative"
@@ -1063,10 +1062,102 @@ export default function Typesofproducts({ productId }: TypesofproductsProps) {
                         }}
                       >
                         <Image
-                          src={`https://erithglobalbackend.onrender.com/uploads/${item.image}`}
+                          src={`http://localhost:5000/uploads/${item.image}`}
                           alt={item.name}
                           fill
                           sizes="(max-width: 576px) 25vw, (max-width: 768px) 25vw, 180px"
+                          style={{
+                            objectFit: "contain",
+                            objectPosition: "top",
+                          }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div> */}
+              <div className="col-11">
+                <div
+                  ref={scrollRef}
+                  className="d-flex flex-column"
+                  style={{
+                    height: "390px",
+                    overflowY: showScroll ? "scroll" : "hidden",
+                    paddingRight: "10px",
+                    color: "#292929",
+                  }}
+                >
+                  {visibleItems.map((item, index, arr) => (
+                    <div
+                      key={item.id}
+                      onClick={() => setActiveType(item)}
+                      className="tp-event-3-item d-flex align-items-center-stretch"
+                      style={{
+                        height: "120px",
+                        minHeight: "120px",
+                        flexShrink: 0,
+                        marginBottom: index !== arr.length - 1 ? "15px" : "0px",
+                        padding: 0,
+                        borderRadius: "10px",
+                        cursor: "pointer",
+                        background:
+                          activeType?.id === item.id
+                            ? "#eef2ff"
+                            : "transparent",
+                        flexWrap: "nowrap",
+                        flexDirection: "row",
+                      }}
+                    >
+                      <div
+                        className="tp-event-3-content d-flex flex-column justify-content-center"
+                        style={{
+                          flex: 1,
+                          minWidth: 0,
+                          paddingLeft: "10px",
+                          paddingRight: "8px",
+                        }}
+                      >
+                        <h5
+                          style={{
+                            fontSize: "clamp(11px, 1.2vw, 15px)",
+                            margin: "0 0 4px 0",
+                            lineHeight: 1.3,
+                            wordBreak: "break-word",
+                          }}
+                        >
+                          {item.name}
+                        </h5>
+
+                        <span
+                          className="text-muted small"
+                          style={{
+                            fontSize: "clamp(9px, 0.9vw, 11px)",
+                            lineHeight: "1.2",
+                            display: "block",
+                            wordBreak: "break-word",
+                          }}
+                        >
+                          {item.product_type}
+                        </span>
+                      </div>
+
+                      <div
+                        className="tp-event-3-thumb position-relative"
+                        style={{
+                          width: "clamp(70px, 12vw, 130px)",
+                          minWidth: "clamp(70px, 12vw, 130px)",
+                          alignSelf: "stretch",
+                          borderRadius: "10px",
+                          overflow: "hidden",
+                          background: "#f8f8f8",
+                          flexShrink: 0,
+                        }}
+                      >
+                        <Image
+                          src={`http://localhost:5000/uploads/${item.image}`}
+                          alt={item.name}
+                          fill
+                          sizes="(max-width: 576px) 70px, (max-width: 1024px) 12vw, 130px"
                           style={{
                             objectFit: "contain",
                             objectPosition: "top",

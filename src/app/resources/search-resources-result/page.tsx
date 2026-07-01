@@ -5,8 +5,8 @@
 // // import WebinarsAndVideosSearchResults from "@/components/search-results/webinarsandvideosresults";
 // // import CaseStudiesSearchResults from "@/components/search-results/case-studies";
 
-// // const API_URL = "https://erithglobalbackend.onrender.com/api";
-// // const FILE_BASE = "https://erithglobalbackend.onrender.com/uploads";
+// // const API_URL = "http://localhost:5000/api";
+// // const FILE_BASE = "http://localhost:5000/uploads";
 
 // // export default async function SearchResultsPage({ searchParams }: any) {
 // //   const query = searchParams?.query || "";
@@ -178,8 +178,8 @@
 // // import WebinarsAndVideosSearchResults from "@/components/search-results/webinarsandvideosresults";
 // // import CaseStudiesSearchResults from "@/components/search-results/case-studies";
 
-// // const API_URL = "https://erithglobalbackend.onrender.com/api";
-// // const FILE_BASE = "https://erithglobalbackend.onrender.com/uploads";
+// // const API_URL = "http://localhost:5000/api";
+// // const FILE_BASE = "http://localhost:5000/uploads";
 
 // // export default async function SearchResultsPage({ searchParams }: any) {
 // //   const query = searchParams?.query || "";
@@ -409,8 +409,8 @@
 // import ResourcesSearchBar from "@/components/resources/resourcessearchbar";
 // import CounterOne from "@/components/counter/counter-one";
 
-// const API_URL = "https://erithglobalbackend.onrender.com/api";
-// const FILE_BASE = "https://erithglobalbackend.onrender.com/uploads";
+// const API_URL = "http://localhost:5000/api";
+// const FILE_BASE = "http://localhost:5000/uploads";
 
 // // const navData = [
 // //   {
@@ -1077,8 +1077,8 @@
 // import WebinarsAndVideosSearchResults from "@/components/search-results/webinarsandvideosresults";
 // import CaseStudiesSearchResults from "@/components/search-results/case-studies";
 
-// const API_URL = "https://erithglobalbackend.onrender.com/api";
-// const FILE_BASE = "https://erithglobalbackend.onrender.com/uploads";
+// const API_URL = "http://localhost:5000/api";
+// const FILE_BASE = "http://localhost:5000/uploads";
 
 // export default async function SearchResultsPage({ searchParams }: any) {
 //   const query = searchParams?.query || "";
@@ -1250,8 +1250,8 @@
 // import WebinarsAndVideosSearchResults from "@/components/search-results/webinarsandvideosresults";
 // import CaseStudiesSearchResults from "@/components/search-results/case-studies";
 
-// const API_URL = "https://erithglobalbackend.onrender.com/api";
-// const FILE_BASE = "https://erithglobalbackend.onrender.com/uploads";
+// const API_URL = "http://localhost:5000/api";
+// const FILE_BASE = "http://localhost:5000/uploads";
 
 // export default async function SearchResultsPage({ searchParams }: any) {
 //   const query = searchParams?.query || "";
@@ -1483,8 +1483,8 @@ import CaseStudiesSearchResults from "@/components/search-results/search-case-st
 import ResourcesSearchBar from "@/components/resources/resourcessearchbar";
 import CounterOne from "@/components/counter/counter-one";
 
-const API_URL = "https://erithglobalbackend.onrender.com/api";
-const FILE_BASE = "https://erithglobalbackend.onrender.com/uploads";
+const API_URL = "http://localhost:5000/api";
+const FILE_BASE = "http://localhost:5000/uploads";
 
 const navData = [
   {

@@ -1,4 +1,4 @@
-const FILE_BASE = "https://erithglobalbackend.onrender.com/uploads";
+const FILE_BASE = "http://localhost:5000/uploads";
 
 const getFileUrl = (url?: string) => {
   if (!url) return "#";

@@ -60,7 +60,7 @@ export default function FilterSidebarArea() {
   const [industries, setIndustries] = useState<Industry[]>([]);
 
   useEffect(() => {
-    fetch("https://erithglobalbackend.onrender.com/api/industries")
+    fetch("http://localhost:5000/api/industries")
       .then((res) => res.json())
       .then((data) => setIndustries(data))
       .catch(() => setIndustries([]));

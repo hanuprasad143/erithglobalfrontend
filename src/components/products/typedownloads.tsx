@@ -16,7 +16,7 @@
 //   downloads: Download[];
 // };
 
-// const BASE_URL = "https://erithglobalbackend.onrender.com";
+// const BASE_URL = "http://localhost:5000";
 
 // export default function TypeDownloads({ typeId }: Props) {
 //   const [downloads, setDownloads] = useState<Download[]>([]);

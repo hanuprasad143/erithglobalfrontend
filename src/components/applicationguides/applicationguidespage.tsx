@@ -33,7 +33,7 @@
 //     const category = "Application Guides";
 
 //     fetch(
-//       `https://erithglobalbackend.onrender.com/api/successstories?category_type=${encodeURIComponent(category)}`,
+//       `http://localhost:5000/api/successstories?category_type=${encodeURIComponent(category)}`,
 //     )
 //       .then((res) => res.json())
 //       .then(setApplicationGuides);
@@ -42,7 +42,7 @@
 //   useEffect(() => {
 //     if (!slug) return;
 
-//     fetch(`https://erithglobalbackend.onrender.com/api/successstories/slug/${slug}`)
+//     fetch(`http://localhost:5000/api/successstories/slug/${slug}`)
 //       .then((res) => res.json())
 //       .then((data: Story) => setStory(data))
 //       .catch((err) => console.error(err));
@@ -65,14 +65,14 @@
 //         {/* LEFT SIDE */}
 //         <div className="col-lg-9">
 //           <img
-//             src={`https://erithglobalbackend.onrender.com${story.image}`}
+//             src={`http://localhost:5000${story.image}`}
 //             alt={story.title}
 //             className="banner-img"
 //           />
 
 //           <div className="pdf-clean">
 //             <iframe
-//               src={`https://erithglobalbackend.onrender.com${story.pdf_url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+//               src={`http://localhost:5000${story.pdf_url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
 //             />
 //           </div>
 //         </div>
@@ -102,7 +102,7 @@
 //             </p>
 
 //             <a
-//               href={`https://erithglobalbackend.onrender.com${story.pdf_url}`}
+//               href={`http://localhost:5000${story.pdf_url}`}
 //               target="_blank"
 //               className="download"
 //             >
@@ -153,7 +153,7 @@
 //                     borderRadius: "12px",
 //                     overflow: "hidden",
 //                     height: "230px",
-//                     backgroundImage: `url(https://erithglobalbackend.onrender.com${story.image})`, // ✅ FIXED
+//                     backgroundImage: `url(http://localhost:5000${story.image})`, // ✅ FIXED
 //                     backgroundSize: "cover",
 //                     backgroundPosition: "center",
 //                   }}
@@ -346,7 +346,7 @@ export default function ApplicationGuidesDetails() {
     const category = "Application Guides";
 
     fetch(
-      `https://erithglobalbackend.onrender.com/api/successstories?category_type=${encodeURIComponent(
+      `http://localhost:5000/api/successstories?category_type=${encodeURIComponent(
         category,
       )}`,
     )
@@ -358,9 +358,7 @@ export default function ApplicationGuidesDetails() {
   useEffect(() => {
     if (!slug) return;
 
-    fetch(
-      `https://erithglobalbackend.onrender.com/api/successstories/slug/${slug}`,
-    )
+    fetch(`http://localhost:5000/api/successstories/slug/${slug}`)
       .then((res) => res.json())
       .then((data: Story) => setStory(data))
       .catch((err) => console.error(err));
@@ -383,7 +381,7 @@ export default function ApplicationGuidesDetails() {
         {/* LEFT SIDE */}
         <div className="col-lg-9">
           <Image
-            src={`https://erithglobalbackend.onrender.com${story.image}`}
+            src={`http://localhost:5000${story.image}`}
             alt={story.title}
             className="banner-img"
           />
@@ -395,7 +393,7 @@ export default function ApplicationGuidesDetails() {
                 controls
                 width="100%"
                 height="100%"
-                src={`https://erithglobalbackend.onrender.com${story.video_url}`}
+                src={`http://localhost:5000${story.video_url}`}
               />
             </div>
           )} */}
@@ -409,7 +407,7 @@ export default function ApplicationGuidesDetails() {
                   height: "auto",
                   borderRadius: "6px",
                 }}
-                src={`https://erithglobalbackend.onrender.com${story.video_url}`}
+                src={`http://localhost:5000${story.video_url}`}
               />
             </div>
           )} */}
@@ -420,7 +418,7 @@ export default function ApplicationGuidesDetails() {
           {story.pdf_url && (
             <div className="pdf-clean">
               <iframe
-                src={`https://erithglobalbackend.onrender.com${story.pdf_url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
+                src={`http://localhost:5000${story.pdf_url}#toolbar=0&navpanes=0&scrollbar=0&view=FitH`}
               />
             </div>
           )}
@@ -436,7 +434,7 @@ export default function ApplicationGuidesDetails() {
                   height: "auto",
                   borderRadius: "6px",
                 }}
-                src={`https://erithglobalbackend.onrender.com${story.video_url}`}
+                src={`http://localhost:5000${story.video_url}`}
               />
             </div>
           )}
@@ -468,7 +466,7 @@ export default function ApplicationGuidesDetails() {
 
             {story.pdf_url && (
               <a
-                href={`https://erithglobalbackend.onrender.com${story.pdf_url}`}
+                href={`http://localhost:5000${story.pdf_url}`}
                 target="_blank"
                 className="download"
               >
@@ -522,7 +520,7 @@ export default function ApplicationGuidesDetails() {
                     borderRadius: "12px",
                     overflow: "hidden",
                     height: "230px",
-                    backgroundImage: `url(https://erithglobalbackend.onrender.com${story.image})`,
+                    backgroundImage: `url(http://localhost:5000${story.image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

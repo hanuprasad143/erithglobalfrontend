@@ -179,7 +179,7 @@ import { UpArrowTwo } from "../svg";
 import HoverImgItem from "../event/hover-img-item";
 import { FaMapMarkerAlt, FaClock } from "react-icons/fa";
 
-const BASE_URL = "https://erithglobalbackend.onrender.com/api";
+const BASE_URL = "http://localhost:5000/api";
 
 type JobType = {
   id: number;

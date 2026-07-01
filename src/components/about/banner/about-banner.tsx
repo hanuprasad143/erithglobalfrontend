@@ -68,7 +68,7 @@ export default function AboutBanner({
   const banner = banner_image
     ? banner_image.startsWith("http")
       ? banner_image
-      : `https://erithglobalbackend.onrender.com/uploads/${banner_image}`
+      : `http://localhost:5000/uploads/${banner_image}`
     : "/assets/img/live/ABOUT-ERITH.jpg";
   return (
     <>

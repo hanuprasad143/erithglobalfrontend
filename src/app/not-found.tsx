@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import error_img from "@/assets/img/error/error.png";
+// import not_found from "@/assets/img/error/not_found.png"
+
 import Link from "next/link";
 // import HeaderTwo from "@/components/header/header-two";
 import HeaderOne from "@/components/header/header-one";

@@ -33,7 +33,7 @@
 // // import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 // // import JobsDetails from "@/components/blog/single/jobdesc-item";
 
-// // const BASE_URL = "https://erithglobalbackend.onrender.com/api";
+// // const BASE_URL = "http://localhost:5000/api";
 
 // // async function getJob(slug: string) {
 // //   try {
@@ -80,7 +80,7 @@ import { Metadata } from "next";
 import BreadcrumbOne from "@/components/breadcrumb/breadcrumb-one";
 import ErithJobsDesc from "@/components/jobs/erith-jobs";
 
-const BASE_URL = "https://erithglobalbackend.onrender.com/api";
+const BASE_URL = "http://localhost:5000/api";
 
 async function getJob(slug: string) {
   try {

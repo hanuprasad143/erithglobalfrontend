@@ -174,7 +174,7 @@ export default function AboutIndustries({ data }: Props) {
   const aboutImage = data?.about_image
     ? data.about_image.startsWith("http")
       ? data.about_image
-      : `https://erithglobalbackend.onrender.com/uploads/${data.about_image}`
+      : `http://localhost:5000/uploads/${data.about_image}`
     : "/placeholder.jpg";
   const [successStories, setSuccessStories] = useState<SuccessStory[]>([]);
 
@@ -182,7 +182,7 @@ export default function AboutIndustries({ data }: Props) {
     const category = "Success Stories";
 
     fetch(
-      `https://erithglobalbackend.onrender.com/api/successstories?category_type=${encodeURIComponent(category)}`,
+      `http://localhost:5000/api/successstories?category_type=${encodeURIComponent(category)}`,
     )
       .then((res) => res.json())
       .then(setSuccessStories);
@@ -259,7 +259,7 @@ export default function AboutIndustries({ data }: Props) {
                   }}
                 />
                 {/* <Image
-                  src={`https://erithglobalbackend.onrender.com${data.about_image}`}
+                  src={`http://localhost:5000${data.about_image}`}
                   alt="about"
                   width={700}
                   height={450}
@@ -316,7 +316,7 @@ export default function AboutIndustries({ data }: Props) {
                     overflow: "hidden",
                     height: "230px",
                     // backgroundImage: `url(${story.image})`,
-                    backgroundImage: `url(https://erithglobalbackend.onrender.com${story.image})`,
+                    backgroundImage: `url(http://localhost:5000${story.image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

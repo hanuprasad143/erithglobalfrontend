@@ -69,8 +69,8 @@
 //   //   const fetchData = async () => {
 //   //     try {
 //   //       const [filtersRes, docsRes] = await Promise.all([
-//   //         fetch("https://erithglobalbackend.onrender.com/api/product-downloads/filters"),
-//   //         fetch("https://erithglobalbackend.onrender.com/api/product-downloads"),
+//   //         fetch("http://localhost:5000/api/product-downloads/filters"),
+//   //         fetch("http://localhost:5000/api/product-downloads"),
 //   //       ]);
 
 //   //       const filtersData = await filtersRes.json();
@@ -92,9 +92,9 @@
 //   const fetchData = async () => {
 //     try {
 //       const [filtersRes, docsRes, qualityRes] = await Promise.all([
-//         fetch("https://erithglobalbackend.onrender.com/api/product-downloads/filters"),
-//         fetch("https://erithglobalbackend.onrender.com/api/product-downloads"),
-//         fetch("https://erithglobalbackend.onrender.com/api/quality"),  // ✅ new
+//         fetch("http://localhost:5000/api/product-downloads/filters"),
+//         fetch("http://localhost:5000/api/product-downloads"),
+//         fetch("http://localhost:5000/api/quality"),  // ✅ new
 //       ]);
 
 //       const filtersData = await filtersRes.json();
@@ -189,7 +189,7 @@
 //     await Promise.all(
 //       selectedFiles.map(async (doc) => {
 //         const response = await fetch(
-//           `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
+//           `http://localhost:5000/uploads/${doc.file_url}`,
 //         );
 //         const blob = await response.blob();
 //         zip.file(doc.file_url, blob);
@@ -203,7 +203,7 @@
 //   const handleSingleDownload = async (doc: any) => {
 //     try {
 //       const response = await fetch(
-//         `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
+//         `http://localhost:5000/uploads/${doc.file_url}`,
 //       );
 //       const blob = await response.blob();
 //       saveAs(blob, doc.file_url);
@@ -626,7 +626,7 @@
 //                       }}
 //                       onClick={() => {
 //                         window.open(
-//                           `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
+//                           `http://localhost:5000/uploads/${doc.file_url}`,
 //                           "_blank",
 //                         );
 //                       }}
@@ -899,8 +899,8 @@
 //   //   const fetchData = async () => {
 //   //     try {
 //   //       const [filtersRes, docsRes] = await Promise.all([
-//   //         fetch("https://erithglobalbackend.onrender.com/api/product-downloads/filters"),
-//   //         fetch("https://erithglobalbackend.onrender.com/api/product-downloads"),
+//   //         fetch("http://localhost:5000/api/product-downloads/filters"),
+//   //         fetch("http://localhost:5000/api/product-downloads"),
 //   //       ]);
 
 //   //       const filtersData = await filtersRes.json();
@@ -922,9 +922,9 @@
 //   //   const fetchData = async () => {
 //   //     try {
 //   //       const [filtersRes, docsRes, qualityRes] = await Promise.all([
-//   //         fetch("https://erithglobalbackend.onrender.com/api/product-downloads/filters"),
-//   //         fetch("https://erithglobalbackend.onrender.com/api/product-downloads"),
-//   //         fetch("https://erithglobalbackend.onrender.com/api/quality"), // ✅ new
+//   //         fetch("http://localhost:5000/api/product-downloads/filters"),
+//   //         fetch("http://localhost:5000/api/product-downloads"),
+//   //         fetch("http://localhost:5000/api/quality"), // ✅ new
 //   //       ]);
 
 //   //       const filtersData = await filtersRes.json();
@@ -960,9 +960,9 @@
 //     const fetchData = async () => {
 //       try {
 //         const [filtersRes, docsRes, qualityRes] = await Promise.all([
-//           fetch("https://erithglobalbackend.onrender.com/api/product-downloads/filters"),
-//           fetch("https://erithglobalbackend.onrender.com/api/product-downloads"),
-//           fetch("https://erithglobalbackend.onrender.com/api/quality"),
+//           fetch("http://localhost:5000/api/product-downloads/filters"),
+//           fetch("http://localhost:5000/api/product-downloads"),
+//           fetch("http://localhost:5000/api/quality"),
 //         ]);
 
 //         const filtersData = await filtersRes.json();
@@ -1103,7 +1103,7 @@
 //   //     await Promise.all(
 //   //       selectedFiles.map(async (doc) => {
 //   //         const response = await fetch(
-//   //           `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
+//   //           `http://localhost:5000/uploads/${doc.file_url}`,
 //   //         );
 //   //         const blob = await response.blob();
 //   //         zip.file(doc.file_url, blob);
@@ -1136,7 +1136,7 @@
 //   //     await Promise.all(
 //   //       selectedFiles.map(async (doc) => {
 //   //         const response = await fetch(
-//   //           `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
+//   //           `http://localhost:5000/uploads/${doc.file_url}`,
 //   //         );
 //   //         const blob = await response.blob();
 //   //         zip.file(doc.file_url, blob);
@@ -1177,7 +1177,7 @@
 //     await Promise.all(
 //       selectedFiles.map(async (doc) => {
 //         const response = await fetch(
-//           `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
+//           `http://localhost:5000/uploads/${doc.file_url}`,
 //         );
 //         const blob = await response.blob();
 //         zip.file(doc.file_url, blob);
@@ -1191,7 +1191,7 @@
 //   const handleSingleDownload = async (doc: Document) => {
 //     try {
 //       const response = await fetch(
-//         `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
+//         `http://localhost:5000/uploads/${doc.file_url}`,
 //       );
 //       const blob = await response.blob();
 //       saveAs(blob, doc.file_url);
@@ -1653,7 +1653,7 @@
 //                       }}
 //                       onClick={() => {
 //                         window.open(
-//                           `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
+//                           `http://localhost:5000/uploads/${doc.file_url}`,
 //                           "_blank",
 //                         );
 //                       }}
@@ -1930,9 +1930,9 @@
 //     const fetchData = async () => {
 //       try {
 //         const [filtersRes, docsRes, qualityRes] = await Promise.all([
-//           fetch("https://erithglobalbackend.onrender.com/api/product-downloads/filters"),
-//           fetch("https://erithglobalbackend.onrender.com/api/product-downloads"),
-//           fetch("https://erithglobalbackend.onrender.com/api/quality"),
+//           fetch("http://localhost:5000/api/product-downloads/filters"),
+//           fetch("http://localhost:5000/api/product-downloads"),
+//           fetch("http://localhost:5000/api/quality"),
 //         ]);
 
 //         const filtersData = await filtersRes.json();
@@ -2038,7 +2038,7 @@
 //     await Promise.all(
 //       selected.map(async (doc) => {
 //         const res = await fetch(
-//           `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
+//           `http://localhost:5000/uploads/${doc.file_url}`,
 //         );
 //         const blob = await res.blob();
 //         zip.file(doc.file_url, blob);
@@ -2051,7 +2051,7 @@
 //   const handleSingleDownload = async (doc: Document) => {
 //     try {
 //       const res = await fetch(
-//         `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
+//         `http://localhost:5000/uploads/${doc.file_url}`,
 //       );
 //       const blob = await res.blob();
 //       saveAs(blob, doc.file_url);
@@ -2363,7 +2363,7 @@
 //                           width: "100%",
 //                         }}
 //                         onClick={() =>
-//                           window.open(`https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`, "_blank")
+//                           window.open(`http://localhost:5000/uploads/${doc.file_url}`, "_blank")
 //                         }
 //                         onMouseEnter={(e) => {
 //                           e.currentTarget.style.boxShadow = "0 6px 18px rgba(0,0,0,0.12)";
@@ -2578,13 +2578,9 @@ export default function ErithDocuments({
     const fetchData = async () => {
       try {
         const [filtersRes, docsRes, qualityRes] = await Promise.all([
-          fetch(
-            "https://erithglobalbackend.onrender.com/api/product-downloads/filters",
-          ),
-          fetch(
-            "https://erithglobalbackend.onrender.com/api/product-downloads",
-          ),
-          fetch("https://erithglobalbackend.onrender.com/api/quality"),
+          fetch("http://localhost:5000/api/product-downloads/filters"),
+          fetch("http://localhost:5000/api/product-downloads"),
+          fetch("http://localhost:5000/api/quality"),
         ]);
 
         const filtersData = await filtersRes.json();
@@ -2731,7 +2727,7 @@ export default function ErithDocuments({
     await Promise.all(
       selected.map(async (doc) => {
         const res = await fetch(
-          `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
+          `http://localhost:5000/uploads/${doc.file_url}`,
         );
         const blob = await res.blob();
         zip.file(doc.file_url, blob);
@@ -2743,9 +2739,7 @@ export default function ErithDocuments({
 
   const handleSingleDownload = async (doc: Document) => {
     try {
-      const res = await fetch(
-        `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
-      );
+      const res = await fetch(`http://localhost:5000/uploads/${doc.file_url}`);
       const blob = await res.blob();
       saveAs(blob, doc.file_url);
     } catch (err) {
@@ -3132,7 +3126,7 @@ export default function ErithDocuments({
                         }}
                         onClick={() =>
                           window.open(
-                            `https://erithglobalbackend.onrender.com/uploads/${doc.file_url}`,
+                            `http://localhost:5000/uploads/${doc.file_url}`,
                             "_blank",
                           )
                         }

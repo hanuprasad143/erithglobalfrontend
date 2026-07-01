@@ -21,7 +21,7 @@
 
 //     setLoading(true);
 
-//     fetch(`https://erithglobalbackend.onrender.com/api/type-features/${typeId}`)
+//     fetch(`http://localhost:5000/api/type-features/${typeId}`)
 //       .then((res) => res.json())
 //       .then((data) => {
 //         setFeatures(data || []);

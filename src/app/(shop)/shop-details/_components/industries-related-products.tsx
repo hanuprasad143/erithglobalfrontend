@@ -17,7 +17,7 @@
 //   const [loading, setLoading] = useState(true);
 
 //   useEffect(() => {
-//     fetch("https://erithglobalbackend.onrender.com/api/products")
+//     fetch("http://localhost:5000/api/products")
 //       .then((res) => res.json())
 //       .then((data) => {
 //         // 🔹 filter same subcategory and remove current product
@@ -136,7 +136,7 @@ export default function IndustriesProducts({ industries }: Props) {
 
     const industryIds = industries.map((i) => i.id); // [5, 6, 14, 8, 4, 9]
 
-    fetch("https://erithglobalbackend.onrender.com/api/products")
+    fetch("http://localhost:5000/api/products")
       .then((res) => res.json())
       .then((allProducts: Product[]) => {
         const filtered = allProducts.filter((product) =>

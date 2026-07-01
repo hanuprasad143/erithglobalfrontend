@@ -137,9 +137,7 @@ export default function AllProjects({
   const router = useRouter();
 
   useEffect(() => {
-    fetch(
-      "https://erithglobalbackend.onrender.com/api/successstories/product-types",
-    )
+    fetch("http://localhost:5000/api/successstories/product-types")
       .then((res) => res.json())
       .then((data) => {
         const types = data.map((item: ProductType) => item.product_type);
@@ -165,9 +163,7 @@ export default function AllProjects({
       params.append("product_type", filters.product_type);
     }
 
-    fetch(
-      `https://erithglobalbackend.onrender.com/api/successstories?${params.toString()}`,
-    )
+    fetch(`http://localhost:5000/api/successstories?${params.toString()}`)
       .then((res) => res.json())
       .then(setSuccessStories)
       .catch((err) => console.error(err));
@@ -177,7 +173,7 @@ export default function AllProjects({
   //   const category = "Success Stories";
 
   //   fetch(
-  //     `https://erithglobalbackend.onrender.com/api/successstories?category_type=${encodeURIComponent(category)}`,
+  //     `http://localhost:5000/api/successstories?category_type=${encodeURIComponent(category)}`,
   //   )
   //     .then((res) => res.json())
   //     .then(setSuccessStories);
@@ -477,7 +473,7 @@ export default function AllProjects({
                     borderRadius: "12px",
                     overflow: "hidden",
                     height: "230px",
-                    backgroundImage: `url(https://erithglobalbackend.onrender.com${story.image})`,
+                    backgroundImage: `url(http://localhost:5000${story.image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

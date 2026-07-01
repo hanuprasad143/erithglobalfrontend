@@ -431,7 +431,7 @@
 // //     };
 
 // //     try {
-// //       const res = await fetch("https://erithglobalbackend.onrender.com/api/contact", {
+// //       const res = await fetch("http://localhost:5000/api/contact", {
 // //         method: "POST",
 // //         headers: {
 // //           "Content-Type": "application/json",
@@ -729,7 +729,7 @@
 // //     };
 
 // //     try {
-// //       const res = await fetch("https://erithglobalbackend.onrender.com/api/contact", {
+// //       const res = await fetch("http://localhost:5000/api/contact", {
 // //         method: "POST",
 // //         headers: {
 // //           "Content-Type": "application/json",
@@ -1087,7 +1087,7 @@
 //     };
 
 //     try {
-//       const res = await fetch("https://erithglobalbackend.onrender.com/api/contact", {
+//       const res = await fetch("http://localhost:5000/api/contact", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -1823,7 +1823,7 @@
 //     };
 
 //     try {
-//       const res = await fetch("https://erithglobalbackend.onrender.com/api/contact", {
+//       const res = await fetch("http://localhost:5000/api/contact", {
 //         method: "POST",
 //         headers: {
 //           "Content-Type": "application/json",
@@ -2143,16 +2143,13 @@ export default function ContactForm() {
     };
 
     try {
-      const res = await fetch(
-        "https://erithglobalbackend.onrender.com/api/contact",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(finalData),
+      const res = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-      );
+        body: JSON.stringify(finalData),
+      });
 
       const result = await res.json();
 

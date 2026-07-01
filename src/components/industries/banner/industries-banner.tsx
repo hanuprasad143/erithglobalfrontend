@@ -1,5 +1,5 @@
 // export default function IndustriesBanner({ data }: any) {
-// const IMAGE_BASE = "https://erithglobalbackend.onrender.com";
+// const IMAGE_BASE = "http://localhost:5000";
 
 // const banner =
 //   data?.banner_image
@@ -70,7 +70,7 @@ export default function IndustriesBanner({ data }: Props) {
   const banner = data?.banner_image
     ? data.banner_image.startsWith("http")
       ? data.banner_image
-      : `https://erithglobalbackend.onrender.com/uploads/${data.banner_image}`
+      : `http://localhost:5000/uploads/${data.banner_image}`
     : "/placeholder.jpg";
 
   return (

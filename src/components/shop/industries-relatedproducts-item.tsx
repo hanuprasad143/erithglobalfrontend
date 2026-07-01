@@ -37,7 +37,7 @@ export default function IndustrieRelatedProductsItem({ item }: Props) {
   const imageSrc = item.banner_image
     ? item.banner_image.startsWith("http")
       ? item.banner_image
-      : `https://erithglobalbackend.onrender.com/uploads/${item.banner_image}`
+      : `http://localhost:5000/uploads/${item.banner_image}`
     : "/placeholder.png";
 
   const detailsLink = item.link ? item.link : `/products/${item.slug}`;
